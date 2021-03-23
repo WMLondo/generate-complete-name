@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de Nombres</title>
+    <link type="image/png" rel="icon" href="https://wmlondo.github.io/generate-complete-name/assets/favicon.png" />
+    <link rel="stylesheet" href="https://wmlondo.github.io/generate-complete-name/style.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <box-icon type='solid' name='chevron-up' color="#222831" id="backTopButton" class="header__box-icon header__box-icon--up "></box-icon>
+    </header>
+    <main class="main">
+      <div class="contenedor">
+        <h1 class="contenedor-h1">Generador de Nombres Completos</h1>
+        <div class="contenedor-workspace">
+          <form class="form">
+            <label class="form-label" for="origenNombre"
+              >Origen del Nombre:</label
+            >
+            <select class="form-select" name="Origen" id="origenNombre">
+              <option value="none">--Seleccione--</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Brazil">Brasil</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="France">Francia</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Spain">España</option>
+              <option value="United States">Estados Unidos</option>
+            </select>
+
+            <label class="form-label" for="generoNombre">Genero:</label>
+            <select class="form-select" name="Genero" id="generoNombre">
+              <option value="none">--Seleccione--</option>
+              <option value="male">Hombre</option>
+              <option value="female">Mujer</option>
+            </select>
+            <label class="form-label" for="cantidadGenerar"
+              >Nombres a Generar:</label
+            >
+            <input
+              class="form-textbox"
+              type="text"
+              name="Cantidad"
+              value="5"
+              id="cantidadGenerar"
+            />
+            <input
+              class="form-button"
+              type="button"
+              value="Generar"
+              id="buttonGenerar"
+            />
+          </form>
+          <div class="contenedor-display" id="displayData">
+            <h2 class="contenedor-h2">Nombres Completos Generados</h2>
+            <div class="display-names" id="displayParent"></div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://wmlondo.github.io/generate-complete-name/app.js"></script>
+      <script src="https://wmlondo.github.io/generate-complete-name/top.js"></script>
+    </main>
+  </body>
+</html>
